@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <title>Timer</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Inter';
+            color: white;
+        }
+
+        .count__container {
+            max-width: 300px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            border: 1px solid #d5294d;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #f27a8a, #d5294d);
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 15px 0 10px;
+        }
+
+        button {
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+
+        hr {
+            width: 100%;
+            max-width: 298px;
+            background-color: #d5294d;
+            border-color: #d5294d;
+            color: #d5294d;
+        }
+
+        span {
+            width: 100%;
+            text-align: center;
+            font-size: 64px;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+
+        .timer-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .timer-buttons button {
+            padding: 10px 20px;
+            background-color: #ac1d3c;
+            color: white;
+            border: none;
+        }
+
+        .button-reset {
+            padding: 10px 20px;
+            border: 2px solid #ac1d3c;
+            background-color: #d5294d;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="count__container">
+        <h3>Counter</h3>
+        <span>00:00:00</span>
+        <div class="timer-buttons">
+            <button class="button-start">Start</button>
+            <button class="button-stop">Stop</button>
+        </div>
+        <hr>
+        <button class="button-reset">Reset</button>
+    </div>
+</body>
+</html> 
